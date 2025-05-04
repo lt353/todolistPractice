@@ -7,16 +7,14 @@
    <div class="box">
         <% for (let i=0; i<newListItems.length; i++) { %>
        <div class="item">
-        <input type="checkbox">
-           <p><%= newListItems[i] %></p>
+          <ul>
+           <li><%= newListItems[i] %></li>
+          </ul>
        </div>
        <% } %>
     
        
-     <form class="item" action="/" method="post">
-       <input type="text" name="newItem" placeholder="New Item placeholder" autocomplete="off">
-         <button type="submit" name="list" value=<%= listTitle %>>+</button>
-       </form>   
+     
     </div>
 
          <%- include("footer") -%>
