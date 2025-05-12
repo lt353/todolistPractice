@@ -19,7 +19,7 @@ const personalListItems = ["Lindsay", "Trenton", "Hawaii", "USA"];
 const zodiacListItems = ["Lindsay", "Trenton", "Scorpio", "Topaz"];
 
 // --- Routes ---
-// Simple Home Route (Optional - tells user where to go)
+// Simple Home Route (OPTIONAL - tells user where to go)
 app.get("/", function (req, res) {
 	res.send(
 		"<h1>Welcome! Navigate to /Personal or /Zodiac to see the lists.</h1>"
