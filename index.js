@@ -4,6 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
+const PORT = 3000;
 
 // set EJS as the viewing engine to display html
 app.set("view engine", "ejs");
@@ -47,5 +48,5 @@ app.get("/Zodiac", function (req, res) {
 });
 
 app.listen(3000, function () {
-	console.log("Server is running on port 3000");
+	console.log(`Server is running at http://localhost:${PORT}`);
 });
